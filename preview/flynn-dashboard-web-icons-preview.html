@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>flynn-dashboard-web-icons glyphs preview</title>
+
+    <style>
+      /* Page Styles */
+
+      * {
+        -moz-box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+
+      body {
+        background: #fff;
+        color: #444;
+        font: 16px/1.5 "Helvetica Neue", Helvetica, Arial, sans-serif;
+      }
+
+      a,
+      a:visited {
+        color: #888;
+        text-decoration: underline;
+      }
+      a:hover,
+      a:focus { color: #000; }
+
+      header {
+        border-bottom: 2px solid #ddd;
+        margin-bottom: 20px;
+        overflow: hidden;
+        padding: 20px 0;
+      }
+
+      header h1 {
+        color: #888;
+        float: left;
+        font-size: 36px;
+        font-weight: 300;
+      }
+
+      header a {
+        float: right;
+        font-size: 14px;
+      }
+
+      .container {
+        margin: 0 auto;
+        max-width: 1200px;
+        min-width: 960px;
+        padding: 0 40px;
+        width: 90%;
+      }
+
+      .glyph {
+        border-bottom: 1px dotted #ccc;
+        padding: 10px 0 20px;
+        margin-bottom: 20px;
+      }
+
+      .preview-glyphs { vertical-align: bottom; }
+
+      .preview-scale {
+        color: #888;
+        font-size: 12px;
+        margin-top: 5px;
+      }
+
+      .step {
+        display: inline-block;
+        line-height: 1;
+        position: relative;
+        width: 10%;
+      }
+
+      .step .letters,
+      .step i {
+        -webkit-transition: opacity .3s;
+        -moz-transition: opacity .3s;
+        -ms-transition: opacity .3s;
+        -o-transition: opacity .3s;
+        transition: opacity .3s;
+      }
+
+      .step:hover .letters { opacity: 1; }
+      .step:hover i { opacity: .3; }
+
+      .letters {
+        opacity: .3;
+        position: absolute;
+      }
+
+      .characters-off .letters { display: none; }
+      .characters-off .step:hover i { opacity: 1; }
+
+      
+      .size-12 { font-size: 12px; }
+      
+      .size-14 { font-size: 14px; }
+      
+      .size-16 { font-size: 16px; }
+      
+      .size-18 { font-size: 18px; }
+      
+      .size-21 { font-size: 21px; }
+      
+      .size-24 { font-size: 24px; }
+      
+      .size-36 { font-size: 36px; }
+      
+      .size-48 { font-size: 48px; }
+      
+      .size-60 { font-size: 60px; }
+      
+      .size-72 { font-size: 72px; }
+      
+
+      .usage { margin-top: 10px; }
+
+      .usage input {
+        font-family: monospace;
+        margin-right: 3px;
+        padding: 2px 5px;
+        text-align: center;
+      }
+
+      .usage .point { width: 150px; }
+
+      .usage .class { width: 250px; }
+
+      footer {
+        color: #888;
+        font-size: 12px;
+        padding: 20px 0;
+      }
+
+      /* Icon Font: flynn-dashboard-web-icons */
+
+      @font-face {
+  font-family: "flynn-dashboard-web-icons";
+  src: url("../assets/flynn-dashboard-web-icons.eot");
+  src: url("../assets/flynn-dashboard-web-icons.eot?#iefix") format("embedded-opentype"),
+       url(data:application/x-font-woff;charset=utf-8;base64,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),
+       url("../assets/flynn-dashboard-web-icons.woff") format("woff"),
+       url("../assets/flynn-dashboard-web-icons.ttf") format("truetype"),
+       url("../assets/flynn-dashboard-web-icons.svg#flynn-dashboard-web-icons") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: "flynn-dashboard-web-icons";
+    src: url("../assets/flynn-dashboard-web-icons.svg#flynn-dashboard-web-icons") format("svg");
+  }
+}
+
+      [data-icon]:before { content: attr(data-icon); }
+
+      [data-icon]:before,
+      .icn-github-mark:before,
+.icn-trash:before {
+        display: inline-block;
+        font-family: "flynn-dashboard-web-icons";
+        font-style: normal;
+        font-weight: normal;
+        font-variant: normal;
+        line-height: 1;
+        text-decoration: inherit;
+        text-transform: none;
+        -moz-osx-font-smoothing: grayscale;
+        -webkit-font-smoothing: antialiased;
+      }
+
+      .icn-github-mark:before { content: "\f100"; }
+.icn-trash:before { content: "\f101"; }
+    </style>
+
+    <!--[if lte IE 8]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+
+    <script>
+      function toggleCharacters() {
+        var body = document.getElementsByTagName('body')[0];
+        body.className = body.className === 'characters-off' ? '' : 'characters-off';
+      }
+    </script>
+  </head>
+
+  <body class="characters-off">
+    <div id="page" class="container">
+      <header>
+        <h1>flynn-dashboard-web-icons contains 2 glyphs:</h1>
+        <a onclick="toggleCharacters(); return false;" href="#">Toggle Preview Characters</a>
+      </header>
+
+      
+      <div class="glyph">
+        <div class="preview-glyphs">
+          <span class="step size-12"><span class="letters">Pp</span><i id="icn-github-mark" class="icn-github-mark"></i></span><span class="step size-14"><span class="letters">Pp</span><i id="icn-github-mark" class="icn-github-mark"></i></span><span class="step size-16"><span class="letters">Pp</span><i id="icn-github-mark" class="icn-github-mark"></i></span><span class="step size-18"><span class="letters">Pp</span><i id="icn-github-mark" class="icn-github-mark"></i></span><span class="step size-21"><span class="letters">Pp</span><i id="icn-github-mark" class="icn-github-mark"></i></span><span class="step size-24"><span class="letters">Pp</span><i id="icn-github-mark" class="icn-github-mark"></i></span><span class="step size-36"><span class="letters">Pp</span><i id="icn-github-mark" class="icn-github-mark"></i></span><span class="step size-48"><span class="letters">Pp</span><i id="icn-github-mark" class="icn-github-mark"></i></span><span class="step size-60"><span class="letters">Pp</span><i id="icn-github-mark" class="icn-github-mark"></i></span><span class="step size-72"><span class="letters">Pp</span><i id="icn-github-mark" class="icn-github-mark"></i></span>
+        </div>
+        <div class="preview-scale">
+          <span class="step">12</span><span class="step">14</span><span class="step">16</span><span class="step">18</span><span class="step">21</span><span class="step">24</span><span class="step">36</span><span class="step">48</span><span class="step">60</span><span class="step">72</span>
+        </div>
+        <div class="usage">
+          <input class="class" type="text" readonly="readonly" onClick="this.select();" value=".icn-github-mark" />
+          <input class="point" type="text" readonly="readonly" onClick="this.select();" value="&amp;#xf100;" />
+        </div>
+      </div>
+      
+      <div class="glyph">
+        <div class="preview-glyphs">
+          <span class="step size-12"><span class="letters">Pp</span><i id="icn-trash" class="icn-trash"></i></span><span class="step size-14"><span class="letters">Pp</span><i id="icn-trash" class="icn-trash"></i></span><span class="step size-16"><span class="letters">Pp</span><i id="icn-trash" class="icn-trash"></i></span><span class="step size-18"><span class="letters">Pp</span><i id="icn-trash" class="icn-trash"></i></span><span class="step size-21"><span class="letters">Pp</span><i id="icn-trash" class="icn-trash"></i></span><span class="step size-24"><span class="letters">Pp</span><i id="icn-trash" class="icn-trash"></i></span><span class="step size-36"><span class="letters">Pp</span><i id="icn-trash" class="icn-trash"></i></span><span class="step size-48"><span class="letters">Pp</span><i id="icn-trash" class="icn-trash"></i></span><span class="step size-60"><span class="letters">Pp</span><i id="icn-trash" class="icn-trash"></i></span><span class="step size-72"><span class="letters">Pp</span><i id="icn-trash" class="icn-trash"></i></span>
+        </div>
+        <div class="preview-scale">
+          <span class="step">12</span><span class="step">14</span><span class="step">16</span><span class="step">18</span><span class="step">21</span><span class="step">24</span><span class="step">36</span><span class="step">48</span><span class="step">60</span><span class="step">72</span>
+        </div>
+        <div class="usage">
+          <input class="class" type="text" readonly="readonly" onClick="this.select();" value=".icn-trash" />
+          <input class="point" type="text" readonly="readonly" onClick="this.select();" value="&amp;#xf101;" />
+        </div>
+      </div>
+      
+
+      <footer>
+        Made with love using <a href="http://fontcustom.com">Font Custom</a>.
+      </footer>
+    </div>
+  </body>
+</html>

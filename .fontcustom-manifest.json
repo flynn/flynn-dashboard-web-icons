@@ -1,0 +1,55 @@
+{
+  "checksum": {
+    "previous": "e8cde067132c80575c39450950fba0ad7eb0562133672847c0408dca36d1c50e",
+    "current": "e8cde067132c80575c39450950fba0ad7eb0562133672847c0408dca36d1c50e"
+  },
+  "fonts": [
+    "./assets/flynn-dashboard-web-icons.ttf",
+    "./assets/flynn-dashboard-web-icons.svg",
+    "./assets/flynn-dashboard-web-icons.woff",
+    "./assets/flynn-dashboard-web-icons.eot"
+  ],
+  "glyphs": {
+    "github-mark": {
+      "codepoint": 61696,
+      "source": "./src/github-mark.svg"
+    },
+    "trash": {
+      "codepoint": 61697,
+      "source": "./src/trash.svg"
+    }
+  },
+  "options": {
+    "autowidth": false,
+    "config": "fontcustom.yml",
+    "css_selector": ".icn-{{glyph}}",
+    "debug": false,
+    "font_ascent": 5000,
+    "font_descent": 200,
+    "font_design_size": 52,
+    "font_em": 5200,
+    "font_name": "flynn-dashboard-web-icons",
+    "force": false,
+    "input": {
+      "templates": "./templates",
+      "vectors": "./src"
+    },
+    "no_hash": true,
+    "output": {
+      "css": "./assets",
+      "fonts": "./assets",
+      "preview": "./preview"
+    },
+    "preprocessor_path": "",
+    "project_root": "(pwd)",
+    "quiet": false,
+    "templates": [
+      "flynn-dashboard-web-icons.scss",
+      "preview"
+    ]
+  },
+  "templates": [
+    "./assets/flynn-dashboard-web-icons.scss",
+    "./preview/flynn-dashboard-web-icons-preview.html"
+  ]
+}
