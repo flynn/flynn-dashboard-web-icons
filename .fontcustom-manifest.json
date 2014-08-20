@@ -1,7 +1,7 @@
 {
   "checksum": {
-    "previous": "e8cde067132c80575c39450950fba0ad7eb0562133672847c0408dca36d1c50e",
-    "current": "e8cde067132c80575c39450950fba0ad7eb0562133672847c0408dca36d1c50e"
+    "previous": "d17c4238dfb750a9d0cc54d821b3cd8e612324c7b52046b8ddc3823fd1ddd6b6",
+    "current": "d17c4238dfb750a9d0cc54d821b3cd8e612324c7b52046b8ddc3823fd1ddd6b6"
   },
   "fonts": [
     "./assets/flynn-dashboard-web-icons.ttf",
@@ -10,6 +10,10 @@
     "./assets/flynn-dashboard-web-icons.eot"
   ],
   "glyphs": {
+    "edit": {
+      "codepoint": 61698,
+      "source": "./src/edit.svg"
+    },
     "github-mark": {
       "codepoint": 61696,
       "source": "./src/github-mark.svg"
