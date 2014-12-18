@@ -1,7 +1,7 @@
 {
   "checksum": {
-    "previous": "d17c4238dfb750a9d0cc54d821b3cd8e612324c7b52046b8ddc3823fd1ddd6b6",
-    "current": "d17c4238dfb750a9d0cc54d821b3cd8e612324c7b52046b8ddc3823fd1ddd6b6"
+    "previous": "42f602444530cc8d38007bacf0ee52b7d035aa88f83ca3e977f3fddf996768b8",
+    "current": "42f602444530cc8d38007bacf0ee52b7d035aa88f83ca3e977f3fddf996768b8"
   },
   "fonts": [
     "./assets/flynn-dashboard-web-icons.ttf",
@@ -10,6 +10,10 @@
     "./assets/flynn-dashboard-web-icons.eot"
   ],
   "glyphs": {
+    "auth": {
+      "codepoint": 61699,
+      "source": "./src/auth.svg"
+    },
     "edit": {
       "codepoint": 61698,
       "source": "./src/edit.svg"
@@ -47,6 +51,7 @@
     "preprocessor_path": "",
     "project_root": "(pwd)",
     "quiet": false,
+    "skip_first": false,
     "templates": [
       "flynn-dashboard-web-icons.scss",
       "preview"
