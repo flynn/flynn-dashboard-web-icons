@@ -1,7 +1,7 @@
 {
   "checksum": {
-    "previous": "58be1587f8d450b9165dc19336ecc1a0b2226f4c4ef379f60def6781fe64441b",
-    "current": "58be1587f8d450b9165dc19336ecc1a0b2226f4c4ef379f60def6781fe64441b"
+    "previous": "294e78c163c068defb8646b8a42f4e6fe335d82e19e308afc4e932d038abdb3f",
+    "current": "294e78c163c068defb8646b8a42f4e6fe335d82e19e308afc4e932d038abdb3f"
   },
   "fonts": [
     "./assets/flynn-dashboard-web-icons.ttf",
@@ -21,6 +21,10 @@
     "down": {
       "codepoint": 61702,
       "source": "./src/down.svg"
+    },
+    "download": {
+      "codepoint": 61705,
+      "source": "./src/download.svg"
     },
     "edit": {
       "codepoint": 61698,
