@@ -1,7 +1,7 @@
 {
   "checksum": {
-    "previous": "d3f1c0b059ac0694209dbb8300573c10f6238187b6aa966ca3fc41b2f4ce55e8",
-    "current": "d3f1c0b059ac0694209dbb8300573c10f6238187b6aa966ca3fc41b2f4ce55e8"
+    "previous": "1dbfdcd50d624e7df4ff9b22840a2fe909db3015b8a79dc5182685b409dfa997",
+    "current": "1dbfdcd50d624e7df4ff9b22840a2fe909db3015b8a79dc5182685b409dfa997"
   },
   "fonts": [
     "./assets/flynn-dashboard-web-icons.ttf",
@@ -42,9 +42,17 @@
       "codepoint": 61696,
       "source": "./src/github-mark.svg"
     },
+    "pulse": {
+      "codepoint": 61711,
+      "source": "./src/pulse.svg"
+    },
     "right": {
       "codepoint": 61703,
       "source": "./src/right.svg"
+    },
+    "system-status": {
+      "codepoint": 61710,
+      "source": "./src/system-status.svg"
     },
     "trash": {
       "codepoint": 61697,
@@ -79,6 +87,7 @@
     "preprocessor_path": "",
     "project_root": "(pwd)",
     "quiet": false,
+    "skip_first": false,
     "templates": [
       "flynn-dashboard-web-icons.scss",
       "preview"
